@@ -2,6 +2,7 @@ import copy
 import pygame
 import Screen
 import time
+import sys
 # from game import screen
 pygame.font.init()
 Screen.initialize()
