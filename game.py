@@ -14,7 +14,9 @@ font2 = pygame.font.SysFont("comicsans", 72)
 font3 = pygame.font.SysFont("comicsans", 20)
 font4 = pygame.font.SysFont("comicsans", 20)
 class game:
-    def __init__(self, board_size, pit_count):
+    def __init__(self, board_size=12, pit_count=4):
+    
+        
         self.game_board = boardTemp.board(board_size, pit_count)
         Screen.player_score = [0, 0]
         self.current_player = 0
@@ -287,11 +289,11 @@ class game:
             Screen.screen.blit(bg, (0, 0))
             pygame.display.update()
 
-            # text = font2.render("PALLANGUZHI",1,(255,255,0))
-            # Screen.screen.blit(text,(60,80))
+            text = font2.render("PALLANGUZHI",1,(255,255,0))
+            Screen.screen.blit(text,(60,80))
             pygame.draw.rect(Screen.screen, (0, 153, 153), [30, 260, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (0, 153, 153), [110, 260, 50, 50], border_radius=5)
-            pygame.draw.rect(Screen.screen, (0, 153, 153), [190, 260, 50 ,50], border_radius=5)
+            pygame.draw.rect(Screen.screen, (0, 153, 153), [190, 260, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (0, 153, 153), [270, 260, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (0, 153, 153), [350, 260, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (0, 153, 153), [430, 260, 50, 50], border_radius=5)
@@ -299,9 +301,9 @@ class game:
             pygame.draw.rect(Screen.screen, (160, 160, 160), [110, 360, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (160, 160, 160), [190, 360, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (160, 160, 160), [270, 360, 50, 50], border_radius=5)
-            pygame.draw.rect(Screen.screen, (160, 160, 160), [350, 360, 50,50], border_radius=5)
+            pygame.draw.rect(Screen.screen, (160, 160, 160), [350, 360, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (160, 160, 160), [430, 360, 50, 50], border_radius=5)
-            # Screen.screen.blit(bg, (0, 200))
+            Screen.screen.blit(bg, (0, 200))
 
             size = int(self.game_board.board_size / 2)
 

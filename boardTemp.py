@@ -79,7 +79,6 @@ class board:
         Screen.screen.fill((0, 0, 0))
         bg = pygame.image.load("pallanguzhi main.jpg").convert()
         Screen.screen.blit(bg, (0, 0))
-
         pygame.draw.rect(Screen.screen, (0, 153, 153), [30, 260, 50, 50], border_radius=5)
         pygame.draw.rect(Screen.screen, (0, 153, 153), [110, 260, 50, 50], border_radius=5)
         pygame.draw.rect(Screen.screen, (0, 153, 153), [190, 260, 50, 50], border_radius=5)
@@ -322,6 +321,7 @@ class board:
             pygame.draw.rect(Screen.screen, (160, 160, 160), [270, 360, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (160, 160, 160), [350, 360, 50, 50], border_radius=5)
             pygame.draw.rect(Screen.screen, (160, 160, 160), [430, 360, 50, 50], border_radius=5)
+            pygame.draw.rect(Screen.screen, (500, 500, 500), [830, 660, 500, 500], border_radius=5)
             # Screen.screen.blit(bg, (0, 200))
 
             size = int(self.board_size / 2)
